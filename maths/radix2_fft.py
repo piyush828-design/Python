@@ -39,7 +39,7 @@ class FFT:
     >>> x = FFT(A, B)
 
     Print product
-    >>> print(x.product)  # 2x + 3x^2 + 8x^3 + 4x^4 + 6x^5
+    >>> x.product  # 2x + 3x^2 + 8x^3 + 4x^4 + 6x^5
     [(-0+0j), (2+0j), (3+0j), (8+0j), (6+0j), (8+0j)]
 
     __str__ test
@@ -80,14 +80,10 @@ class FFT:
 
     # Discrete fourier transform of A and B
     def __dft(self, which):
-        if which == "A":
-            dft = [[x] for x in self.polyA]
-        else:
-            dft = [[x] for x in self.polyB]
+        dft = [[x] for x in self.polyA] if which == "A" else [[x] for x in self.polyB]
         # Corner case
         if len(dft) <= 1:
             return dft[0]
-        #
         next_ncol = self.c_max_length // 2
         while next_ncol > 0:
             new_dft = [[] for i in range(next_ncol)]
@@ -170,7 +166,7 @@ class FFT:
             f"{coef}*x^{i}" for coef, i in enumerate(self.product)
         )
 
-        return "\n".join((a, b, c))
+        return f"{a}\n{b}\n{c}"
 
 
 # Unit tests

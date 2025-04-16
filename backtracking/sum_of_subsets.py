@@ -1,11 +1,12 @@
 """
-        The sum-of-subsetsproblem states that a set of non-negative integers, and a
-        value M, determine all possible subsets of the given set whose summation sum
-        equal to given M.
+The sum-of-subsetsproblem states that a set of non-negative integers, and a
+value M, determine all possible subsets of the given set whose summation sum
+equal to given M.
 
-        Summation of the chosen numbers must be equal to given number M and one number
-        can be used only once.
+Summation of the chosen numbers must be equal to given number M and one number
+can be used only once.
 """
+
 from __future__ import annotations
 
 
@@ -44,7 +45,7 @@ def create_state_space_tree(
             nums,
             max_sum,
             index + 1,
-            path + [nums[index]],
+            [*path, nums[index]],
             result,
             remaining_nums_sum - nums[index],
         )

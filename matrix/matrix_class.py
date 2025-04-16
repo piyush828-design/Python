@@ -21,9 +21,9 @@ class Matrix:
      [7. 8. 9.]]
 
     Matrix rows and columns are available as 2D arrays
-    >>> print(matrix.rows)
+    >>> matrix.rows
     [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-    >>> print(matrix.columns())
+    >>> matrix.columns()
     [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
 
     Order is returned as a tuple
@@ -55,7 +55,7 @@ class Matrix:
     [[-3. 6. -3.]
      [6. -12. 6.]
      [-3. 6. -3.]]
-    >>> print(matrix.inverse())
+    >>> matrix.inverse()
     Traceback (most recent call last):
         ...
     TypeError: Only matrices with a non-zero determinant have an inverse
@@ -141,7 +141,7 @@ class Matrix:
 
     @property
     def order(self) -> tuple[int, int]:
-        return (self.num_rows, self.num_columns)
+        return self.num_rows, self.num_columns
 
     @property
     def is_square(self) -> bool:
@@ -315,7 +315,7 @@ class Matrix:
             ]
         )
 
-    def __mul__(self, other: Matrix | int | float) -> Matrix:
+    def __mul__(self, other: Matrix | float) -> Matrix:
         if isinstance(other, (int, float)):
             return Matrix(
                 [[int(element * other) for element in row] for row in self.rows]
@@ -345,7 +345,7 @@ class Matrix:
         if other == 0:
             return self.identity()
         if other < 0:
-            if self.is_invertable:
+            if self.is_invertable():
                 return self.inverse() ** (-other)
             raise ValueError(
                 "Only invertable matrices can be raised to a negative power"
