@@ -14,6 +14,7 @@
   * [Generate Parentheses](backtracking/generate_parentheses.py)
   * [Hamiltonian Cycle](backtracking/hamiltonian_cycle.py)
   * [Knight Tour](backtracking/knight_tour.py)
+  * [M Coloringproblem](backtracking/m_coloringproblem.py)
   * [Match Word Pattern](backtracking/match_word_pattern.py)
   * [Minimax](backtracking/minimax.py)
   * [N Queens](backtracking/n_queens.py)
@@ -40,6 +41,7 @@
   * [Count Number Of One Bits](bit_manipulation/count_number_of_one_bits.py)
   * [Excess 3 Code](bit_manipulation/excess_3_code.py)
   * [Find Previous Power Of Two](bit_manipulation/find_previous_power_of_two.py)
+  * [Find Unique Number](bit_manipulation/find_unique_number.py)
   * [Gray Code Sequence](bit_manipulation/gray_code_sequence.py)
   * [Highest Set Bit](bit_manipulation/highest_set_bit.py)
   * [Index Of Rightmost Set Bit](bit_manipulation/index_of_rightmost_set_bit.py)
@@ -270,6 +272,7 @@
     * [Merge Two Lists](data_structures/linked_list/merge_two_lists.py)
     * [Middle Element Of Linked List](data_structures/linked_list/middle_element_of_linked_list.py)
     * [Print Reverse](data_structures/linked_list/print_reverse.py)
+    * [Remove Loop](data_structures/linked_list/remove_loop.py)
     * [Reverse K Group](data_structures/linked_list/reverse_k_group.py)
     * [Rotate To The Right](data_structures/linked_list/rotate_to_the_right.py)
     * [Singly Linked List](data_structures/linked_list/singly_linked_list.py)
@@ -286,6 +289,7 @@
     * [Queue On Pseudo Stack](data_structures/queues/queue_on_pseudo_stack.py)
   * Stacks
     * [Balanced Parentheses](data_structures/stacks/balanced_parentheses.py)
+    * [Celebrity Problem](data_structures/stacks/celebrity_problem.py)
     * [Dijkstras Two Stack Algorithm](data_structures/stacks/dijkstras_two_stack_algorithm.py)
     * [Infix To Postfix Conversion](data_structures/stacks/infix_to_postfix_conversion.py)
     * [Infix To Prefix Conversion](data_structures/stacks/infix_to_prefix_conversion.py)
@@ -471,6 +475,7 @@
 
 ## Graphs
   * [A Star](graphs/a_star.py)
+  * [Adjascency List](graphs/adjascency_list.py)
   * [Ant Colony Optimization Algorithms](graphs/ant_colony_optimization_algorithms.py)
   * [Articulation Points](graphs/articulation_points.py)
   * [Basic Graphs](graphs/basic_graphs.py)
@@ -570,6 +575,7 @@
   * [Gaussian Elimination](linear_algebra/gaussian_elimination.py)
   * [Jacobi Iteration Method](linear_algebra/jacobi_iteration_method.py)
   * [Lu Decomposition](linear_algebra/lu_decomposition.py)
+  * [Matrix Inversion](linear_algebra/matrix_inversion.py)
   * Src
     * [Conjugate Gradient](linear_algebra/src/conjugate_gradient.py)
     * [Gaussian Elimination Pivoting](linear_algebra/src/gaussian_elimination_pivoting.py)
@@ -1153,6 +1159,8 @@
     * [Sol1](project_euler/problem_120/sol1.py)
   * Problem 121
     * [Sol1](project_euler/problem_121/sol1.py)
+  * Problem 122
+    * [Sol1](project_euler/problem_122/sol1.py)
   * Problem 123
     * [Sol1](project_euler/problem_123/sol1.py)
   * Problem 125
